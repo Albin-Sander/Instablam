@@ -107,6 +107,29 @@
   window.addEventListener("load", startup, false);
 })();
 
+document.getElementById("btn-filter1").addEventListener("click", applyFilter1);
+document.getElementById("btn-filter2").addEventListener("click", applyFilter2);
+
+function applyFilter1() {
+  Caman("#canvas", function () {
+    this.brightness(10);
+    this.contrast(30);
+    this.sepia(60);
+    this.saturation(-30);
+    this.render();
+  });
+}
+
+function applyFilter2() {
+  Caman("#canvas", function () {
+    this.brightness(30);
+    this.contrast(70);
+    this.sepia(10);
+    this.saturation(30);
+    this.render();
+  });
+}
+
 function registrateServiceWorker() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker

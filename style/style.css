@@ -1,0 +1,39 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 0.2fr 1fr;
+  grid-gap: 10px;
+}
+
+h1 {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+#canvas {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-self: center;
+}
+
+.camera {
+  grid-row: 3;
+  grid-column: 2;
+  display: grid;
+  justify-content: center;
+}
+
+#startbutton {
+  display: flex;
+  align-self: flex-start;
+  width: 50%;
+}
+
+.output {
+  grid-row: 4;
+  grid-column: 2;
+  display: flex;
+  justify-self: center;
+}

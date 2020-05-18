@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/insta-appletouch.png"
+    />
+    <title>Instablam</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Instablam</h1>
+
+      <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton">Take photo</button>
+      </div>
+
+      <canvas id="canvas"> </canvas>
+      <div class="output">
+        <img id="photo" alt="The screen capture will appear in this box." />
+      </div>
+    </div>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>

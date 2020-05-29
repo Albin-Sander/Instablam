@@ -55,7 +55,16 @@ button {
 }
 
 #filters {
+  display: flex;
+  flex-direction: column;
   grid-row: 1;
   grid-column: 1;
   position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  #filters {
+    grid-row: 1;
+    grid-column: 2;
+  }
 }

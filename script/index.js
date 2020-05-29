@@ -108,8 +108,7 @@ document.getElementById("btn-sepia-").addEventListener("click", decreaseSepia);
 
 function increaseBrightness() {
   Caman("#canvas", function () {
-    this.brightness(10);
-    this.render();
+    this.brightness(5).render();
   });
 }
 
